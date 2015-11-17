@@ -1,0 +1,375 @@
+/***
+Template: Design Lab
+Author: Nitish
+***/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/***
+	Misc classes
+***/
+.no-padding{
+	padding: 0;
+}
+.no-margin{
+	margin: 0;
+}
+.no-bottom-space {
+  	padding-bottom: 0;
+  	margin-bottom: 0;
+}
+.no-top-space {
+  	padding-top: 0;
+  	margin-top: 0;
+}
+.no-space {
+  	margin: 0;
+  	padding: 0;
+}
+.mt5{
+	margin-top: 5px;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mt20{
+	margin-top: 20px;
+}
+.mt30{
+	margin-top: 30px;
+}
+.mt40{
+	margin-top: 40px;
+}
+.mt50{
+	margin-top: 50px;
+}
+.mt60{
+	margin-top: 60px;
+}
+.mb10{
+	margin-bottom: 10px;
+}
+.mb20{
+	margin-bottom: 20px;
+}
+.mb30{
+	margin-bottom: 30px;
+}
+.mb40{
+	margin-bottom: 40px;
+}
+.mb50{
+	margin-bottom: 50px;
+}
+.mb60{
+	margin-bottom: 60px;
+}
+.pd10{
+	padding: 10px;
+}
+.pd15{
+	padding: 15px;
+}
+.no-radius{
+	border-radius: 0;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.text-center{
+	text-align: center;
+}
+.text-uppercase{
+	text-transform: uppercase;
+}
+.container{
+	width: 65.99%;
+	margin: 0 auto;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+}
+/***
+	Header
+***/
+header{
+	background: url('../images/header-bg.jpg') no-repeat center center;
+	height: 755px;
+	background-size: cover;
+	width: 100%;
+}
+.logo{
+	padding-top: 15em;
+}
+.logo img{
+	width: 50px;
+}
+.site-title{
+	margin-top: 4em;
+}
+.site-title h1{
+	font-size: 3.39em;
+	color: #fff;
+	letter-spacing: 0.1em;
+	line-height: 1.2em;
+}
+.site-intro p{
+	color: #fff;
+	margin-bottom: 8px;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+}
+.mouse{
+	background: url('../images/mouse.png') no-repeat center;
+	width: 23px;
+	height: 37px;
+	margin: 7.5em auto 0;
+	display: block;
+}
+/***
+	Page Content
+***/
+.white-bg .section-content, .img-bg .section-content{
+	position: relative;
+    padding: 0 150px 50px;
+    border-top: 0!important;
+}
+.white-bg .section-content{
+	margin: 0 auto;
+    border: 2px solid #3c3c3c;
+}
+.white-bg .section-content:before, .white-bg .section-content:after, .img-bg .section-content:before, .img-bg .section-content:after{
+	content: '';
+	position: absolute;
+	width: 28.22%;
+    height: 2px;
+}
+.white-bg .section-content:before{
+    left: 0;
+    background: #3c3c3c;
+}
+.white-bg .section-content:after{
+	background: #3c3c3c;
+}
+.white-bg .section-content:after, .img-bg .section-content:after{
+    right: 0;
+    top: 0;
+}
+.img-bg .section-content{
+    border: 2px solid #fff;
+}
+.img-bg .section-content:before{
+    left: 0;
+    background: #fff;
+}
+.img-bg .section-content:after{
+    background: #fff;
+}
+.white-bg h1, .img-bg h1{
+	font-size: 2.65em;
+	width: 74%;
+	margin: 0 auto;
+	position: relative;
+	top: -18px;	
+}
+.img-bg h1, .img-bg p{
+	color: #fff;
+}
+.white-bg p, .img-bg p{
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 5px;
+	line-height: 1.5em;
+}
+.white-bg{
+	color: #3c3c3c;
+}
+.white-bg, .img-bg{
+	padding: 10em 0;
+}
+/***
+	Services
+***/
+.services{
+	background: url('../images/service-bg.jpg') no-repeat;
+	background-size: cover;
+	color: #fff; 
+}
+/***
+	WE Do
+***/
+.we-do h4{
+	padding-top: 8em;
+	font-size: 1.5em;
+}
+.design h4{
+	background: url('../images/design.png') no-repeat center;
+}
+.development h4{
+	background: url('../images/development.png') no-repeat center;
+}
+.prod-management h4{
+	background: url('../images/prod-management.png') no-repeat center;
+}
+/***
+	Our Work
+***/
+.work{
+	height: 235px;
+	position: relative;
+	margin-bottom: 6px;
+	-webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */
+	flex: 1;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+.work h4{
+	position: absolute;
+	bottom: 30px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 25px;
+	left: 20px;
+}
+.top-work{
+	background: url('../images/top-workz.jpg') no-repeat center center;
+	background-size: cover;
+}
+.joint{
+	background: url('../images/joint.jpg') no-repeat center center;
+	margin: 0 6px;
+	background-size: cover;
+}
+.market{
+	background: url('../images/market.jpg') no-repeat center center;
+	background-size: cover;
+}
+.work-top{
+	background: url('../images/work-top.jpg') no-repeat center center;
+	background-size: cover;
+}
+.lable{
+	background: url('../images/label.jpg') no-repeat center center;
+	background-size: cover;
+	margin: 0 6px;
+}
+.kyiv{
+	background: url('../images/kviz.jpg') no-repeat center center;
+	background-size: cover;
+}
+.top-work:hover, .joint:hover, .market:hover, .work-top:hover, .lable:hover, .kyiv:hover{
+	background-position: -40px;
+	transition: all 0.4s; 
+} 
+/***
+	Contact
+***/
+.contact .btn{
+	padding: 1em;
+    background: #3c3c3c;
+    color: #fff;
+    font-size: 16px;
+    margin: 3em auto 0;
+    text-decoration: none;
+    display: block;
+    width: 250px;
+    letter-spacing: 0.1em;
+}
+footer .copyright{
+	width: 300px;
+	margin: 0 auto
+}
+footer .copyright p{
+	padding-top: 14px; 
+}
+
+/***
+	Media Queries
+***/
+@media screen and (max-width: 768px){
+	.mouse{
+		margin: 0 auto;
+	}
+	.white-bg .section-content, .img-bg .section-content{
+		padding: 0 15.9% 50px;
+	}
+	.white-bg .section-content:before, .white-bg .section-content:after, .img-bg .section-content:before, .img-bg .section-content:after{
+		width: 15%;
+	}
+	.white-bg h1, .img-bg h1{
+		font-size: 2em;
+		top: -13px;
+	}
+	.work h4{
+		font-size: 16px;
+	}
+	.contact .btn{
+		width: 180px;
+	}
+}
